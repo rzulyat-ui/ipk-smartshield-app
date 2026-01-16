@@ -1,31 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SmartShield App Download</title>
+  <meta charset="UTF-8" />
+  <title>SmartShield App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #0b3c6f, #0f5ea8);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff;
+      color: #0b3c6f;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.8;
+      margin: 8px 0 24px;
+    }
+
+    .download-btn {
+      display: block;
+      background: linear-gradient(135deg, #0b3c6f, #0f5ea8);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(11, 60, 111, 0.35);
+    }
+
+    .ios {
+      background: #e6eaf0;
+      color: #7a8aa0;
+      cursor: not-allowed;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #6c7a90;
+      margin-top: 16px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; padding: 40px;">
-  <h1>SmartShield App</h1>
-  <p>BLE Smart Umbrella Anti-Loss System</p>
 
-  <hr><br>
+<body>
 
-  <h2>Android</h2>
-  <a style="font-size:20px;"
-     href="https://github.com/rzulyat-ui/ipk-smartshield-app/releases/latest">
-     Download SmartShield (Android APK)
-  </a>
+  <div class="card">
+    <img src="logo.png" alt="SmartShield Logo" class="logo">
 
-  <p style="margin-top:20px; font-size:12px;">
-    If installation is blocked, enable “Install unknown apps” for your browser.
-  </p>
+    <h1>SmartShield</h1>
+    <div class="subtitle">
+      Smart Umbrella Anti-Loss System
+    </div>
 
-  <br><hr><br>
+    <a class="download-btn"
+       href="https://github.com/rzulyat-ui/ipk-smartshield-app/releases/latest">
+      ⬇ Download for Android
+    </a>
 
-  <h2>iOS</h2>
-  <p>Coming soon via TestFlight</p>
+    <div class="download-btn ios">
+       iOS (Coming Soon)
+    </div>
 
-  <br><br>
-  <small>© IPK SmartShield Project</small>
+    <div class="footer">
+      Scan the QR • Download • Stay Protected
+    </div>
+  </div>
+
 </body>
 </html>
